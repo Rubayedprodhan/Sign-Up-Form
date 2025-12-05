@@ -1,0 +1,24 @@
+h1{
+    color: red;
+    background-color: beige;
+}
+body{
+    color: rgb(0, 0, 0);
+    background-image: url(download.jpeg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.p1{
+    
+    /* border-width: 5px;
+    border-style: solid;
+    border-radius: 12px; */
+    border: 15px dotted red;
+
+}
+
+.p2{
+    border-width: 10px;
+    border-style: dotted;
+    border-color: green;
+}
