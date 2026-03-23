@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Signup Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="theme-switch">
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider round"></span>
+            </label>
+            <span>Dark Mode</span>
+        </div>
+
+        <div class="signup-card">
+            <h1>Sign Up</h1>
+            <p>Create your account</p>
+            <hr>
+
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="user">Full Name</label>
+                    <input type="text" id="user" name="user" placeholder="Rubayed Prodhan" required>
+                    <div class="error-message" id="userError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="rubayedprodhan550@gmail.com" required>
+                    <div class="error-message" id="emailError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" name="password" placeholder="Create a password" required>
+                        <span class="toggle-password" id="togglePassword">👁️</span>
+                    </div>
+
+
+                    <div class="password-strength" id="passwordStrength"></div>
+                    <div class="error-message" id="passwordError"></div>
+                </div>
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                        <span class="toggle-password" id="toggleConfirmPassword">👁️</span>
+                    </div>
+                    <div class="error-message" id="confirmError"></div>
+                </div>
+
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="countryCode">Country Code</label>
+                        <select id="countryCode" name="countryCode">
+                            <option value="+880">+880 (Bangladesh)</option>
+                            <option value="+1">+1 (USA/Canada)</option>
+                            <option value="+44">+44 (UK)</option>
+                        </select>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Your number">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="Canada">Canada</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                    </select>
+                </div>
+
+                <div class="form-group gender-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="Male"> Male</label>
+                        <label><input type="radio" name="gender" value="Female"> Female</label>
+                        <label><input type="radio" name="gender" value="Other"> Other</label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date of Birth</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="color">Favorite Color</label>
+                        <input type="color" id="color" name="color" value="#3b82f6">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="file">Profile Picture</label>
+                    <input type="file" id="file" name="file" accept="image/*">
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="agree" required>
+                        <span>I agree to the <a href="#">Terms & Conditions</a></span>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="comment">Additional Comments</label>
+                    <textarea id="comment" name="comment" rows="3" placeholder="Tell us something..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+
+            <div id="successMessage" class="success-message"></div>
+        </div>
+
+        <div class="submissions-section">
+            <h2>Recent Signups</h2>
+
+
+
+            <div id="submissionsList">
+                <p class="empty-msg">No submissions yet. Fill out the form above!</p>
+            </div>
+        </div>
+
+   
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+</body>
+
+
+
+</html>
